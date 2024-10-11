@@ -10,4 +10,4 @@ buildAsm() {
 }
 
 buildAsm build/bios-Stage1.bin src/bios/bootsector.asm
-buildAsm build/bios-EBR.bin src/bios/VBR.asm
+buildAsm build/bios-EBR.bin src/bios/EBR.asm

@@ -10,7 +10,7 @@ if [ -z "$1" ]; then
 fi
 
 dd if=/dev/zero "of=$1" count=1 bs=440
-dd if=/dev/zero "of=$1" count=8 bs=512
+dd if=/dev/zero "of=$1" count=8 bs=512 seek=1
 
 dd if=build/bios-Stage1.bin "of=$1" bs=440 count=1
-dd if=build/bios-EBR.bin "of=$1" bs=512 count=8
+dd if=build/bios-EBR.bin "of=$1" bs=512 count=8 seek=1
