@@ -18,6 +18,8 @@ putc:
 
 	pop ax
 
+	ret
+
 puts:
 	push ax
 	push si
